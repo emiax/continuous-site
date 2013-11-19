@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Continuous - Preview</title>
+
+    <link href="http://fonts.googleapis.com/css?family=Pacifico&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/main.css"></link>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script> 
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js" type="text/javascript"></script>
+
+
+    
+    <script type="text/javascript"
+	    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+    <script src="lib/Three.js"></script>
+    <script src="lib/Detector.js"></script>
+    <script src="lib/Stats.js"></script>
+    <script src="lib/jquery.mousewheel.js"></script>
+    <script src="lib/jquery.slimscroll.min.js"></script>
+
+    <script src="js/continuous.js"></script>
+
+
+
+    <script>
+		var app;
+		$(document).ready(function() {
+			app = new CALC.Application($("#application"), /*developMode*/ false);
+      
+			var optimization = new CALC.visualizations.OptimizationEN("Optimization with equality constraints");
+//			var optimization = new CALC.visualizations.TangentialPlane("Tangentplan");
+			app.addVisualization(optimization);
+
+                        var about = $('#about');
+                        var hideAbout = $('#hideAbout');
+                        hideAbout.click(function () {
+                            about.slideUp();
+                        });
+                         
+		});
+	  
+	  
+    </script>
+  </head>
+  <body>    <div id="about">This is a prototype/demo of <a href="http://continuous.se/en">Continuous</a>. We want to help university students to better understand mathematics. Read about <a href="http://continuous.se/en">our vision</a> and <a href="http://emilaxelsson.se">the development</a>.<div style="float: right;"><a href="http://continuous.se/demo/">Swedish version</a>
+<a style="text-decoration: none;" id="hideAbout" href="#">x</a></div>
+</div>
+
+    <div id="application"></div>
+  </body>
+</html>
+
+
+

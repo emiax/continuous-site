@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Continuous</title>
+
+    <link href="http://reset5.googlecode.com/hg/reset.min.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Asap:400,700italic,400italic,700|Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <meta charset="utf-8">
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script> 
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+
+  </head>
+  <body>
+
+    <div id="language">
+      <a href="../index.html">In Swedish</a>
+    </div>
+
+    <header>
+      <h1>
+        continuous
+      </h1>
+      <p>
+        is an interactive visualization tool where concepts from mathematics can be explained intuitively for university students, using modern 3D computer graphics inside the web browser.
+
+      </p>
+    </header>
+
+    <section id="demo">
+      <a href="demo/index.html" id="demoButton">Demo: Optimization with equality constraints</a>
+    </section>
+
+    <section id="video">
+      <h2>Watch a video (Swedish only):</h2>
+      <p>This is our entry for the competition C Awards, where we won prizes in the categories <em>Best Interaction Design</em> and <em>People's Choice Award</em></p>
+      <iframe width="560" height="315" src="http://www.youtube.com/embed/Xy5cmWGp4YY?rel=0" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section id="about">
+      <h2>We love the process of learning, visualization, 3D computer graphics and software</h2>
+      <p>
+        Our dream is to be part of a revolutionary development in how students learn mathematics.
+        Modern web technologies such as JavaScript and WebGL provide entirely new ways to create accissible and interactive visualizations, and we are fascinated about these possibilities.
+      </p>
+      
+      <p>
+        Our goal is to motivate students to build up a visual understanding of mathematics, instead of just memorizing a couple of formulae. 
+        We strive to develop software that help people.
+      </p>
+
+    </section>
+
+
+    <section id="contact">
+      <h2>Do you want to help us to take math education to the next level?</h2>
+      
+      <p>
+        We welcome collaborations with universities, student literature authors and companies who want to contribute to the development of math eduacation.
+        Use this form to get in contact with us for any reason. We'd love to hear from you!
+      </p>
+      
+      <form id="form" action="#" method="post">
+        <label id="labelName">Name:</label><input id="inputName" name="name" type="text">
+        <label id="labelEmail">Email:</label><input id="inputEmail" name="email" type="text">
+        <label id="labelMessage">Message:</label>
+        
+        <textarea id="inputMessage" name="message"></textarea>
+        <a id="inputSubmit">Send</a>
+
+      </form>
+
+    </section>
+ 
+    
+    
+    <footer>
+      <div id="team">
+
+        <div class="column">
+          <img src="../img/emil.png"/>
+        <h3>Emil Axelsson, developer</h3>
+        <ul>
+          <li><a href="http://emilaxelsson.se">emilaxelsson.se</a></li>
+          <li><a href="http://twitter.com/emilaxelsson">@emilaxelsson</a></li>
+          <li><a href="http://linkedin.com/in/emiax">linkedin.com/in/emiax</a></li>
+          <li><a href="http://github.com/emiax">github.com/emiax</a></li>
+          <li><a href="http://facebook.com/nils.emil.axelsson">facebook.com/nils.emil.axelsson</a></li>
+        </ul>
+        </div>
+        
+        <div class="column">
+          <img src="../img/tomas.png"/>
+        <h3>Tomas Forsyth Rosin, developer</h3>
+        <ul>
+          <li><a href="http://forsythrosin.se">forsythrosin.se</a></li>
+          <li><a href="http://twitter.com/forsythrosin">@forsythrosin</a></li>
+          <li><a href="http://linkedin.com/in/forsythrosin">linkedin.com/in/forsythrosin</a></li>
+          <li><a href="http://github.com/forsythrosin">github.com/forsythrosin</a></li>
+          <li><a href="http://facebook.com/forsyth.rosin">facebook.com/forsyth.rosin</a></li>
+        </ul>
+        </div>
+
+        <div class="column">
+          <img src="../img/jonas.png"/>
+        <h3>Jonas Zeitler, developer</h3>
+        <ul>
+          <li><a href="http://jonaszeitler.se">jonaszeitler.se</a></li>
+          <li><a href="https://twitter.com/jonaszeitler">@jonaszeitler</a></li>
+          <li><a href="http://linkedin.com/in/jonaszeitler">linkedin.com/in/jonaszeitler</a></li>
+          <li><a href="http://github.com/J-Zeitler">github.com/J-Zeitler</a></li>
+          <li><a href="http://facebook.com/jonas.e.zeitler">facebook.com/jonas.e.zeitler</a></li>
+        </ul>
+        </div>
+
+        <div class="column">
+          <img src="../img/marcus.png"/>
+        <h3>Marcus Nygren, evangelist</h3>
+        <ul>
+          <li><a href="http://marcusnygren.se">marcusnygren.se</a></li>
+          <li><a href="http://twitter.com/marcusnygren">@marcusnygren</a></li>
+          <li><a href="http://linkedin.com/in/marcusnygren">linkedin.com/in/marcusnygren</a></li>
+          <li><a href="http://quora.com/Marcus-Nygren">quora.com/Marcus-Nygren</a></li>
+          <li><a href="http://facebook.com/nygrenmarcus">facebook.com/nygrenmarcus</a></li>
+        </ul>
+        </div>
+      </div>
+
+      
+      <div id="subfooter">
+        <div id="footerlogo">
+          continuous
+        </div>
+        <ul>
+          <li>With support from the <a href="http://itn.liu.se">Department of Science and Technology</a> at <a href="http://liu.se">Linköping University</a></li>
+          <li>Selected by the <a href="http://www.ida.liu.se/index.sv.shtml">Department of Computer Science </a> at <a href="http://liu.se">Linköpings Universitet</a> for <a href="http://www.ida.liu.se/projects/isoc/">IDA Summer of Code 2013</a> (<a href="http://emilaxelsson.se/">development blog</a>)</li>
+          <li>Winner of <a href="http://cawards.se">C Awards 2013</a> in the categories "Best Interaction Design" and "People's Choice Award"</li>
+          <li>Awarded project scholarship by <a href="http://www.polytekniska.se/">Norrköpings Polytekniska Förening</a>, 2012</li>
+        </ul>
+      </div>
+    </footer>
+
+  </body>
+</html>
+
+
+

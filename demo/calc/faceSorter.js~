@@ -1,0 +1,32 @@
+    var orders = (function () {
+
+        /* 
+         * Compare faces
+         */
+        function cmpFaces(a, b, axis) {
+            var vertices = tessData.vertices;
+            var c1 = vertices[a[0]][axis] + vertices[a[1]][axis] + vertices[a[2]][axis];
+            var c2 = vertices[b[0]][axis] + vertices[b[1]][axis] + vertices[b[2]][axis];
+            
+            return c1 === c2 ? 0 :
+                c1 < c2 ? -1 :
+                1;
+        }
+        
+        // Create 6 differently sorted versions of the face lists (painter's algorithm stuff related to MultiSortObject)
+        var orders = [
+            tessData.faces.slice(0).sort(function (a, b) { return cmpFaces(a, b, 'x'); }),
+            tessData.faces.slice(0).sort(function (a, b) { return cmpFaces(a, b, 'y'); }),
+            tessData.faces.slice(0).sort(function (a, b) { return cmpFaces(a, b, 'z'); })
+        ];
+        
+        (function reverseOrders() {
+            var i;
+            for (i = 0; i < 3; i++) {
+                orders.push(orders[i].slice(0).reverse());
+            }
+        }());
+        return orders;
+    })();
+
+
